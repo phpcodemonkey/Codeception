@@ -262,6 +262,7 @@ EOF;
         if (!array_key_exists('profile', $this->testUser)) {
             $this->testUser['profile'] = $this->facebook->getTestUserInfo($this->grabFacebookTestUserAccessToken());
         }
+
         return $this->testUser['profile']['name'];
     }
 
